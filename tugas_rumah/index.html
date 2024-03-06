@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Dimas Febrianto" />
+    <meta name="robots" content="index, follow" />
+    <title>From Regristrasi</title>
+  </head>
+  <body style="width: 50%;">
+    <h1>From Registrasi</h1>
+    <hr />
+
+
+    <form action="" method="post">
+      <div>
+        <fieldset>
+          <legend>Biodata</legend>
+      <table>
+        <tr>
+          <td>Nama Mahasiswa</td>
+          <td>:</td>
+          <td><input type="text" placeholder="Nama Anda"/></td>
+        </tr>
+        <tr>
+          <td>No Induk Mahasiswa(NIM)</td>
+          <td>:</td>
+          <td><input type="number" disabled placeholder="1203220069" /></td>
+        </tr>
+
+        <tr>
+          <td>Alamat Mahasiswa</td>
+          <td>:</td>
+          <td>
+            <textarea
+              name="textarea_form"
+              id=""
+              cols="30"
+              rows="5"
+              placeholder="Alamat Anda"
+            ></textarea>
+          </td>
+        </tr>
+
+        <tr>
+          <td>Tanggal Lahir</td>
+          <td>:</td>
+          <td><input type="date" /></td>
+        </tr>
+
+        <tr>
+          <td>Jenis Kelamin</td>
+          <td>:</td>
+          <td>
+            <input type="radio" name="JK" /> Pria
+            <input type="radio" name="JK" /> Wanita
+          </td>
+        </tr>
+
+        <tr>
+          <td>Upload Foto</td>
+          <td>:</td>
+          <td><input type="file" name="file" /></td>
+        </tr>
+
+        <tr>
+          <td>URL Website</td>
+          <td>:</td>
+          <td>
+            <input type="text" name="URL" placeholder="URL Website Anda " />
+          </td>
+        </tr>
+
+        <tr>
+          <td>Perguruan Tinggi</td>
+          <td>:</td>
+          <td><input type="text" /></td>
+        </tr>
+      </table>
+    </fieldset>
+    </div>
+
+      <div>
+        <fieldset>
+          <legend>Info Akun</legend>
+      <table>
+        <tr>
+          <td>Email</td>
+          <td>:</td>
+          <td><input type="text" placeholder="Email Anda" /></td>
+        </tr>
+
+        <tr>
+          <td>Username</td>
+          <td>:</td>
+          <td><input type="text" placeholder="Username Anda" /></td>
+        </tr>
+
+        <tr>
+          <td>Password</td>
+          <td>:</td>
+          <td><input type="password" placeholder="Password Anda " /></td>
+        </tr>
+
+        <tr>
+          <td>Ulangi Password</td>
+          <td>:</td>
+          <td><input type="password" placeholder="Ulangi Password" /></td>
+        </tr>
+      </table>
+    </fieldset>
+    </div>
+
+    <div>
+      <fieldset>
+        <legend>Kemampuan Dasar</legend>
+    <table>
+      <tr>
+        <td>
+          <input type="checkbox" name="HTML" value="HTML" id="HTML" /><label
+            for="HTML"
+            >HTML</label
+          >
+        </td>
+        <td>
+          <input type="checkbox" name="CSS" value="CSS" id="CSS" /><label
+            for="CSS"
+            >CSS</label
+          >
+        </td>
+        <td>
+          <input type="checkbox" name="Javascript" value="Javascript" id="Javascript" /><label
+            for="Javascript"
+            >Javascript</label
+          >
+        </td>
+        <td>
+          <input type="checkbox" name="PHP" value="PHP" id="PHP" /><label
+            for="PHP"
+            >PHP</label
+          >
+        </td>
+        <td>
+          <input type="checkbox" name="MySQL" value="MySQL" id="MySQL" /><label
+            for="MySQL"
+            >MySQL</label
+          >
+        </td>
+        </td>
+        <td>
+          <input type="checkbox" name="Laravel" value="Laravel" id="Laravel" /><label
+            for="Laravel"
+            >Laravel</label
+          >
+        </td>
+        <td>
+          <input type="checkbox" name="React Native" value="React Native" id="React Native" /><label
+            for="React Native"
+            >React Native</label
+          >
+        </td>
+      </tr>
+    </table>
+  </fieldset>
+  </div>
+
+    <table style="margin: 0 auto; width: 10%; padding: 10px;">
+        <tr>
+            <td><input type="reset" value="reset"></td>
+            <td><input type="submit" value="simpan"></td>
+            <td><input type="button" value="button" onclick=""></td>
+        </tr>
+    </table>
+  </form>
+  </body>
+</html>
