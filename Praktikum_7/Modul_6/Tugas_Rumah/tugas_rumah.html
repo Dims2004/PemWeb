@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Registrasi</title>
+    <style>
+      .error {
+        color: red;
+      }
+    </style>
+    <link rel="stylesheet" href="tugas_rumah.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Form Registrasi</h1>
+      <form
+        id="registrationForm"
+        name="registrationForm"
+        method="post"
+        action="proses.php"
+      >
+        <p>
+          Nama: <input type="text" name="nama" id="nama" />
+          <span id="namaSpan" class="error"></span>
+        </p>
+        <p>
+          Username: <input type="text" name="username" id="username" />
+          <span id="usernameSpan" class="error"></span>
+        </p>
+        <p>
+          Email: <input type="email" name="email" id="email" />
+          <span id="emailSpan" class="error"></span>
+        </p>
+        <p>
+          Password: <input type="password" name="password" id="password" />
+          <span id="passwordSpan" class="error"></span>
+        </p>
+        <p>
+          Konfirmasi Password:
+          <input
+            type="password"
+            name="konfirmasi_password"
+            id="konfirmasi_password"
+          />
+          <span id="konfirmasiPasswordSpan" class="error"></span>
+        </p>
+        <p>
+          No Telepon:
+          <input
+            type="tel"
+            name="no_telepon"
+            id="no_telepon"
+            pattern="[0-9]+"
+          />
+          <span id="noTeleponSpan" class="error"></span>
+        </p>
+        <p>
+          Jenis Kelamin:
+          <input
+            type="radio"
+            name="jenis_kelamin"
+            id="jenis_kelamin_pria"
+            value="Pria"
+          />
+          <label for="jenis_kelamin_pria">Pria</label>
+          <input
+            type="radio"
+            name="jenis_kelamin"
+            id="jenis_kelamin_wanita"
+            value="Wanita"
+          />
+          <label for="jenis_kelamin_wanita">Wanita</label>
+          <span id="jenisKelaminSpan" class="error"></span>
+        </p>
+        <p>
+          Alamat Website: <input type="url" name="website" id="website" />
+          <span id="websiteSpan" class="error"></span>
+        </p>
+        <p id="successMessage" style="display: none; color: green">
+          Berhasil Submit
+        </p>
+        <p>
+          <input type="submit" name="submit" id="submit" value="Daftar" />
+        </p>
+      </form>
+      <script src="Form.js"></script>
+    </div>
+  </body>
+</html>
